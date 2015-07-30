@@ -1,0 +1,23 @@
+<html ng-app="demo">
+  <head>
+    <title>Posts</title>
+  </head>
+  <body>
+  <div ng-controller="codeCtrl">
+    <code-editor syntax="python" ng-model="code">
+    </code-editor>
+    <textarea ng-model="code" cols="100" rows="50"></textarea>
+  </div>
+  </body>
+  <script src='lib/angular/angular.js'></script>
+
+  <script src='lib/codemirror/codemirror.js'></script>
+  <script src='lib/codemirror/language/python.js'></script>
+
+  <!-- Code Editor Styles -->
+  	  <link rel="stylesheet" href="css/codemirror.css">
+  <!-- Code Editor Directives -->
+  <script src="js/testCtrl.js"></script>
+
+  <!-- End Code Editor component -->
+</html>
