@@ -1,12 +1,12 @@
-<html ng-app="demo">
+<html ng-app="tang">
   <head>
     <title>Posts</title>
   </head>
   <body>
   <div ng-controller="codeCtrl">
-    <code-editor syntax="python" ng-model="code">
-    </code-editor>
-    <textarea ng-model="code" cols="100" rows="50"></textarea>
+    <button ng-click="show()">show</button>
+    <code-editor code="content"></code-editor>
+    <textarea ng-model="content" cols="100" rows="50"></textarea>
   </div>
   </body>
   <script src='lib/angular/angular.js'></script>
@@ -17,7 +17,8 @@
   <!-- Code Editor Styles -->
   	  <link rel="stylesheet" href="css/codemirror.css">
   <!-- Code Editor Directives -->
-  <script src="js/testCtrl.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script src="js/testTextareaCtrl.js"></script>
 
   <!-- End Code Editor component -->
 </html>
