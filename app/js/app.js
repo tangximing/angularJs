@@ -1,1 +1,1 @@
-var app = angular.module('tang', ['ui.ace']);
+var app = angular.module('tang', []);
