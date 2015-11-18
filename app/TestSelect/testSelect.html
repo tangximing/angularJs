@@ -1,0 +1,8 @@
+<div>
+	<select style="width:500px; height:400px" multiple="true" 
+			ng-model="rightSelected" ng-options="item.test for item in pickedSequences | orderBy : 'id' track by item.id">
+	</select>
+	<div>
+		<button ng-click="moveUp()">up</button>
+	</div>
+</div>
